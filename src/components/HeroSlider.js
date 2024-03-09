@@ -40,10 +40,10 @@ const HeroSlider = () => {
         <div>
             <div className='container pt-6 lg:pt-0'>
                 <Slider {...settings}>
-                    {slidedata.map((item) => {
+                    {slidedata.map((item, index) => {
                         return (
                             <Slide
-                                key={item.key}
+                                key={index}
                                 img={item.img}
                                 title={item.title}
                                 mainTitle={item.mainTitle}
